@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Project</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>BMI Calculator</h1>
+        <form>
+            <div class="div-height">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" placeholder="170">
+            </div>
+            <div class="div-weight">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="60">
+            </div>
+            <button class="button">Calculate BMI</button>
+        </form>
+    </div>
+    <div class="modal hide">
+        <article>
+            <h2>Your BMI is --.-</h2>
+            <p>you are in type 3 - light obesity.</p>
+            <button class="close">X</button>
+        </article>
+    </div>
+    <div class="error">
+        <p>Fill correctly</p>
+    </div>
+    
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

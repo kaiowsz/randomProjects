@@ -1,0 +1,112 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.wrapper {
+    background-color: white;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+form input {
+    width: 100%;
+    margin: 0.4rem 0 2rem 0;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid rgb(100, 98, 98);
+}
+
+form button {
+    width: 100%;
+    border: 0;
+    background-color: darkslategrey;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(38, 49, 49);
+}
+
+.modal {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    background-color: rgba(127, 255, 212, 0.705);
+}
+
+.modal article {
+    background-color: white;
+    padding: 4rem;
+    border-radius: 6px;
+    position: relative;
+}
+.modal article h2 {
+    margin-bottom: 1.2rem;
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 0;
+}
+.close:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    background-color: rgb(219, 25, 25);
+    color: white;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    padding: 3px;
+    text-align: center;
+    transition: transform 1s;
+}
+
+.error.open {
+    transform: translateY(40px);
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        padding: 5rem 3rem;
+        margin: 0 1rem;
+    }
+}

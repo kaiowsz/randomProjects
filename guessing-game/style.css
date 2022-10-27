@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+body, html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(142, 165, 101);
+    font-family: 'DM Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-icons {
+    display: flex;
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    margin: 2px;
+    border: 4px solid rgb(43, 42, 42);
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.699);
+}
+
+.screen1, .screen2 {
+    background-color: rgb(96, 117, 117);
+    font-size: 1.6rem;
+    padding: 2rem 4rem 4rem 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 6px rgb(88, 86, 86);
+    color: white;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    padding-top: 1.5rem;
+}
+
+form input {
+    width: 30%;
+    height: 3.0rem;
+    padding-left: 1.5rem;
+    border-radius: 4px 4px;
+    border: 1px solid lightgray;
+}
+form button, .screen2 button {
+    width: 50%;
+    font-family: 'DM Sans';
+    height: 3.3rem;
+    border: 0;
+    border-radius: 4px 4px;
+    background-color: rgb(206, 206, 206);
+    transition: background 0.3s;
+}
+form button:hover, .screen2 button:hover {
+    background-color: rgb(165, 164, 164);
+    cursor: pointer;
+}
+
+.screen2 h1 {
+    padding-bottom: 4.0rem;
+}
+
+.screen2 button {
+    height: 4.0rem;
+    width: 100%;
+}
+.screen1-p {
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .screen1 {
+        margin: 0px 10px 0px 10px;
+    }
+
+    form input {
+        width: 20px;
+    }
+    form button {
+        width: 50px;
+    }
+    .form-div1 {
+        width: 75%;
+    }
+    .form-div2 {
+        font-size: 1.2rem;
+        display: flex;
+    }
+}
+@media (min-width: 400px) {
+    .screen1-p {
+        font-size: 1.6rem;
+    }
+}

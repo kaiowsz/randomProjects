@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div-icons">
+        <div class="icons">?</div>
+        <div class="icons">3</div>
+    </div>
+    <div class="screen1">
+        <h1>Guessing Game</h1>
+        <p>Find out the number which i am thinking... (between 0 and 10)</p>
+        <form>
+            <div class="form-div1">
+                <input type="number" id="input-number" min="0" max="10">
+                <button class="button-screen1">Guess</button>
+            </div>
+            <div class="form-div2">
+                <p class="screen1-p hide">you missed</p>
+            </div>
+        </form>
+    </div>
+    <div class="screen2 hide">
+        <h1>You won (or not)!</h1>
+        <button class="button-screen2">Play Again</button>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>

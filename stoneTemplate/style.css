@@ -3,6 +3,7 @@
     --ff1: 'Roboto Condensed', sans-serif;
     --ff2: 'Roboto', sans-serif;
     --ff3: 'Vollkorn', serif;
+    --main-color: #c7aa8b;
 }
 
 * {
@@ -28,7 +29,7 @@ header {
     height: 2.5rem;
     margin-left: 1rem;
 }
-.menu-img {
+.header-img {
     margin-right: 1rem;
 }
 .logo-title {
@@ -42,11 +43,8 @@ div img {
     height: 4rem;
 }
 
-main {
+/* main {
     height: 46.7rem;
-    background: url('images/town.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     font-weight: lighter;
     color: white;
     font-family: var(--ff1);
@@ -56,18 +54,245 @@ main h1 {
     font-weight: 300;
     font-size: 4.8rem;
 }
+
 main span {
     font-weight: bold;
+} */
+
+.line {
+    width: 6rem;
+    height: 2px;
+    background-color: white;
+    margin: auto;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
 }
-main div {
-    height: 100%;
+
+/* .slide button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0.8rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.6rem;
+    font-family: var(--ff2);
+    transition: all 0.2s;
+}
+main button:hover {
+    background-color: white;
+    color: rgb(31, 31, 31);
+    border: 2px solid white;
+    cursor: pointer;
+} */
+
+.first {
     display: flex;
     flex-flow: column;
     align-items: center;
+    background-color: var(--main-color);
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.teste {
+.research,
+.build,
+.optimize {
+    width: 90%;
+    text-align: center;
+}
+
+.first h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgba(87, 87, 87, 0.815);
+    margin: 2rem;
+}
+.first img {
+    height: 10rem;
+}
+
+.first p {
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgba(87, 87, 87, 0.815);
+    margin: 2rem 1rem;
+}
+
+
+.black-line {
+    height: 1px;
+    width: 80%;
+    background-color: rgba(119, 119, 119, 0.301);
+    margin: auto;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.parallax {
+    height: 53rem;
+    background: url('images/ocean.jpg');
+    background-size: cover;
+}
+.parallax h2 {
+    padding: 5rem 1rem 0;
+    color: var(--main-color);
+    font-weight: normal;
+    font-family: var(--ff1);
+    font-size: 4.5rem;
+}
+
+.line-beige {
+    height: 2px;
+    width: 40%;
+    margin: 3rem 1rem;
+    background-color: var(--main-color);
+}
+
+/* DOING THE SLIDER */
+
+main {
+    height: 46.7rem;
+    overflow: hidden;
     width: 100%;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.main-first {
+    background: url('images/bridge.jpg');
+}
+.main-second {
+    background: url('images/town.jpg');
+}
+.main-third {
+    background: url('images/computer.jpg');
+}
+.main-four {
+    background: url('images/city.jpg')
+}
+
+.slide {
+    height: 100%;
+    transition: 1.5s;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.slide h1 {
+    width: 100%;
+    margin-top: 4rem;
+    color: white;
+    font-family: var(--ff1);
+    font-weight: lighter;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 4.8rem;
+}
+.slide span {
+    font-weight: bold;
+}
+
+.slide p {
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: var(--ff3);
+    color: rgba(255, 255, 255, 0.815);
+}
+
+.slide button {
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 3.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1rem;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.6rem;
+    font-family: var(--ff1);
+    transition: all 0.4s;
+}
+
+.slide button:hover {
+    background-color: white;
+    color: rgb(31, 31, 31);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: -4rem;
     display: flex;
     justify-content: center;
+}
+
+.manual-btn {
+    background-color: rgba(255, 255, 255, 0.279);
+    padding: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+.auto-navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 112%;
+    width: 100%;
+}
+
+.auto-navigation div:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.auto-navigation div {
+    background-color: rgba(255, 255, 255, 0.279);
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#radio1:checked ~ .main-first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .main-first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .main-first {
+    margin-left: -50%;
+} 
+#radio4:checked ~ .main-first {
+    margin-left: -75%;
+}
+
+
+#radio1:checked ~ .auto-navigation .auto-btn1 {
+    background-color: white;
+}
+#radio2:checked ~ .auto-navigation .auto-btn2 {
+    background-color: white;
+}
+#radio3:checked ~ .auto-navigation .auto-btn3 {
+    background-color: white;
+}
+#radio4:checked ~ .auto-navigation .auto-btn4 {
+    background-color: white;
 }

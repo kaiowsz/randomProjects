@@ -10,7 +10,7 @@
     <title>Stone Webpage</title>
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,24 +18,103 @@
             <img src="https://uploads-ssl.webflow.com/636ab256faeb12b1eb5e70b6/636ab256faeb1207f75e70cb_stone-webclip.png" alt="Stone logo">
             <p class="logo-title">Stone</p>
         </div>
-        <div class="menu-img">
+        <div class="header-img">
             <img src="images/VisualEditor_-_Icon_-_Menu.svg.png" alt="MENU ICON">
         </div>
     </header>
     <main>
-        <div>
-            <div class="teste">
-                <h1>WE KEEP THINGS</h1>
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+
+            <div class="main-first slide">
+                <h1>WE KEEP THINGS <br><span>CLEAN AND SIMPLE</span></h1>
+                <div class="line"></div>
+                <p>So clean that you'll go crazy wondering why it's so clean.</p>
+                <button>SEE OUR WORK</button>
             </div>
-            <h1>WE KEEP THINGS <span>CLEAN AND SIMPLE</span></h1>
-            <div class="line"></div>
-            <p>So clean that you'll go crazy wondering why it's so clean.</p>
-            <img src="linkedln.svg" alt="">
-            <button>SEE OUR WORK</button>
+            <div class="main-second slide">
+                <h1>THERE'S MORE TO DESIGN<br><span>THAN PRETTY THINGS</span></h1>
+                <div class="line"></div>
+                <p>It's about content and originality. That's what it's about.</p>
+                <button>VIEW NIKE CASE STUDY</button>
+            </div>
+            <div class="main-third slide">
+                <h1>OUR CLIENTS<br><span>LOVE OUR WORK</span></h1>
+                <div class="line"></div>
+                <p>They love us so much they tell all of their friends.</p>
+                <button>VIEW CASE STUDY</button>
+            </div>
+            <div class="main-four slide">
+                <h1>OUR CLIENTS<br><span>LOVE OUR WORK</span></h1>
+                <div class="line"></div>
+                <p>They love us so much they tell all of their friends.</p>
+                <button>VIEW CASE STUDY</button>
+            </div>
+
+            <div class="auto-navigation">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
     </main>
 
+
+    <!-- SECTIONS -->
+
+
+    <section class="first">
+        <div class="research">
+            <div class="black-line"></div>
+            <h2>RESEARCH</h2>
+            <img src="svg/lamp.svg" alt="lamp svg image">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam veritatis illum cupiditate vitae beatae, provident eos, odit.</p>
+        </div>
+        <div class="build">
+            <div class="black-line"></div>
+            <h2>BUILD</h2>
+            <img src="svg/tablet.svg" alt="tablet svg image">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam veritatis illum cupiditate vitae beatae, provident eos, odit.</p>
+        </div>
+        <div class="optimize">
+            <div class="black-line"></div>
+            <h2>OPTIMIZE</h2>
+            <img src="svg/symbol.svg" alt="symbol svg image">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam veritatis illum cupiditate vitae beatae, provident eos, odit.</p>
+        </div>
+    </section>
+
+    <section class="parallax">
+        <h2>The design process, at its best, integrates the aspirations of art, science, and culture.</h2>
+        <div class="line-beige"></div>
+    </section>
     
-    
+    <section class="team">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+            
+        </div>
+    </section>
+
+    <script src="assets/index.js"></script>
 </body>
 </html>

@@ -43,22 +43,6 @@ div img {
     height: 4rem;
 }
 
-/* main {
-    height: 46.7rem;
-    font-weight: lighter;
-    color: white;
-    font-family: var(--ff1);
-}
-
-main h1 {
-    font-weight: 300;
-    font-size: 4.8rem;
-}
-
-main span {
-    font-weight: bold;
-} */
-
 .line {
     width: 6rem;
     height: 2px;
@@ -68,21 +52,6 @@ main span {
     margin-bottom: 2rem;
 }
 
-/* .slide button {
-    background-color: rgba(255, 255, 255, 0);
-    padding: 0.8rem;
-    border: 2px solid white;
-    color: white;
-    font-size: 1.6rem;
-    font-family: var(--ff2);
-    transition: all 0.2s;
-}
-main button:hover {
-    background-color: white;
-    color: rgb(31, 31, 31);
-    border: 2px solid white;
-    cursor: pointer;
-} */
 
 .first {
     display: flex;
@@ -127,9 +96,9 @@ main button:hover {
 }
 
 .parallax {
-    height: 53rem;
     background: url('images/ocean.jpg');
     background-size: cover;
+    padding-bottom: 1rem;
 }
 .parallax h2 {
     padding: 5rem 1rem 0;
@@ -158,6 +127,7 @@ main {
     width: 400%;
     height: 100%;
     display: flex;
+    position: relative;
 }
 
 .slides input {
@@ -208,9 +178,11 @@ main {
 }
 
 .slide button {
+    position: absolute;
+    z-index: 2;
     transform: translateX(-50%);
     margin-left: 50%;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0);
     padding: 1rem;
     border: 2px solid white;
@@ -229,7 +201,7 @@ main {
 
 
 .manual-navigation {
-    position: absolute;
+    position: relative;
     width: 100%;
     margin-top: -4rem;
     display: flex;
@@ -254,8 +226,9 @@ main {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 112%;
-    width: 100%;
+    align-items: flex-end;
+    height: 94%;
+    width: 25%;
 }
 
 .auto-navigation div:not(:last-child) {
@@ -295,4 +268,145 @@ main {
 }
 #radio4:checked ~ .auto-navigation .auto-btn4 {
     background-color: white;
+}
+
+.team-h1 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    color:rgba(87, 87, 87, 0.815);
+    font-family: var(--ff1);
+}
+
+.team-profile {
+    margin: 1rem;
+    margin-bottom: 5rem;
+    display: flex;
+
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.team-profile img {
+    height: 50%;
+    max-width: 90%;
+    box-shadow: 1px 1px 15px gray;
+}
+
+.social-icons {
+    padding-left: 1rem;
+    align-self: flex-start;
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+.team-profile p {
+    padding-left: 1rem;
+    align-self: flex-start;
+    font-size: 1.8rem;
+    color:rgba(87, 87, 87, 0.815);
+    font-family: var(--ff1);
+    margin: 1rem 0 0 0.2rem;
+}
+.team-profile h2 {
+    align-self: flex-start;
+    color: rgba(87, 87, 87, 0.815);
+    font-size: 1.2rem;
+    font-family: var(--ff1);
+    padding-left: 1.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+}
+
+.testimonials {
+    background-color: #e0e0e0;
+    
+    height: 20rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+}
+.testimonials h2 {
+    color:rgba(87, 87, 87, 0.815);
+    text-align: center;
+    padding: 2rem 2rem 1rem 2rem;
+    font-size: 1.6rem;
+    font-family: var(--ff1);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.line-gray {
+    width: 6rem;
+    height: .2rem;
+    background-color:rgba(87, 87, 87, 0.815);
+    margin: 0 auto 2rem;
+
+}
+
+.content {
+    font-size: 1.6rem;
+    color:rgba(87, 87, 87, 0.815);
+    font-family: var(--ff1);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    color: white;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#prev-button, #next-button {
+    border: 0;
+    margin: .5rem;
+    background-color: transparent;
+    transition: all .6s;
+}
+
+#prev-button:hover, #next-button:hover {
+    cursor: pointer;
+    background-color: #979494;
+    border-radius: 1rem;
+}
+
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+
+.container-comments {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.comment {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.on {
+    opacity: 1;
+}
+
+.comment p {
+    font-size: 1.6rem;
+    font-family: var(--ff3);
+    color:rgba(87, 87, 87, 0.815);
+    width: 80%;
+    margin: auto;
 }

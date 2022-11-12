@@ -99,6 +99,7 @@ div img {
     background: url('images/ocean.jpg');
     background-size: cover;
     padding-bottom: 1rem;
+    background-attachment: fixed;
 }
 .parallax h2 {
     padding: 5rem 1rem 0;
@@ -115,7 +116,11 @@ div img {
     background-color: var(--main-color);
 }
 
+
+
 /* DOING THE SLIDER */
+
+
 
 main {
     height: 46.7rem;
@@ -270,6 +275,12 @@ main {
     background-color: white;
 }
 
+
+
+/* END OF SLIDER */ 
+
+
+
 .team-h1 {
     font-size: 3.5rem;
     margin-top: 5rem;
@@ -292,6 +303,7 @@ main {
     height: 50%;
     max-width: 90%;
     box-shadow: 1px 1px 15px gray;
+    filter: grayscale(1);
 }
 
 .social-icons {
@@ -321,15 +333,18 @@ main {
     padding-bottom: 1rem;
 }
 
+
+
+/* TESTIMONIALS */ 
+
+
+
+
 .testimonials {
     background-color: #e0e0e0;
     
-    height: 20rem;
+    min-height: 30rem;
     padding-bottom: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-flow: column;
 }
 .testimonials h2 {
     color:rgba(87, 87, 87, 0.815);
@@ -339,6 +354,10 @@ main {
     font-family: var(--ff1);
     font-weight: lighter;
     text-transform: uppercase;
+}
+
+.testimonials .title-testimonials {
+    margin-bottom: 8rem;
 }
 
 .line-gray {
@@ -410,3 +429,60 @@ main {
     width: 80%;
     margin: auto;
 }
+
+.comment .author {
+    font-family: var(--ff1);
+    color: #a78b6d;
+    padding-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* FOOTER */ 
+
+
+
+
+footer {
+    background-color: #323232;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+footer img {
+    padding-top: 2rem;
+    margin: auto;
+}
+
+footer a {
+    width: 90%;
+}
+
+footer button {
+    font-family: var(--ff1);
+
+    width: 100%;
+    border: 2px solid #c7aa8b;
+    color: #c7aa8b;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+footer button:hover {
+    color: #323232;
+    background-color: #c7aa8b;
+    cursor: pointer;
+}
+
+footer p {
+    color:rgba(128, 128, 128, 0.774);
+    font-size: 1.6rem;
+    font-family: var(--ff1);
+    padding-bottom: 2rem;
+}
+

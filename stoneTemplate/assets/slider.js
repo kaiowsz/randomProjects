@@ -44,6 +44,8 @@ buttons.next.addEventListener('click', nextChange)
 
 let countButton = 1;
 
+prevChange()
+
 function prevChange() {
     document.querySelector('.comment'+countButton).classList.remove('on')
     if (countButton == 1) {

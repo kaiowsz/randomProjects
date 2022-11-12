@@ -53,7 +53,7 @@ div img {
 }
 
 
-.first {
+.beige-section {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -68,17 +68,17 @@ div img {
     text-align: center;
 }
 
-.first h2 {
+.beige-section h2 {
     font-size: 2rem;
     font-weight: normal;
     color: rgba(87, 87, 87, 0.815);
     margin: 2rem;
 }
-.first img {
+.beige-section img {
     height: 10rem;
 }
 
-.first p {
+.beige-section p {
     font-size: 1.5rem;
     text-align: left;
     color: rgba(87, 87, 87, 0.815);
@@ -483,6 +483,89 @@ footer p {
     color:rgba(128, 128, 128, 0.774);
     font-size: 1.6rem;
     font-family: var(--ff1);
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
+.off {
+    display: none;
+}
+
+@media (min-width: 775px) {
+    .beige-section {
+        flex-flow: row;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        justify-content: center;
+    }
+    .research,
+    .build,
+    .optimize {
+    max-width: 34rem;
+    text-align: center;
+    }
+
+    .parallax {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .line-beige {
+        align-self: flex-start;
+        margin: auto;
+        width: 20%;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .parallax h2 {
+        padding-top: 10rem;
+        max-width: 70%;
+    }
+
+    .team {
+        display: flex;
+        gap: 1rem;
+    }
+    .team-profile {
+        align-items: flex-start;
+    }
+    .team-profile p {
+        padding-left: 0;
+    }
+    .team-profile h2 {
+        padding-left: .2rem;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .comment {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 70%;
+        text-align: center;
+    }
+
+    footer {
+        height: 15rem;
+    }
+
+    .off {
+        display: inline;
+    }
+
+    footer img {
+        margin-right: 1rem;
+    }
+
+}

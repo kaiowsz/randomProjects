@@ -26,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-left: 3vw;
 }
 .logo img {
     height: 2.5rem;
@@ -41,7 +42,7 @@ header {
 }
 
 .header-img {
-    margin-right: 1rem;
+    margin-right: 5vw;
 }
 
 .header-img path {
@@ -391,6 +392,7 @@ main {
     min-height: 30rem;
     padding-bottom: 4rem;
 }
+
 .testimonials h2 {
     color:rgba(87, 87, 87, 0.815);
     text-align: center;
@@ -628,8 +630,4 @@ footer p {
         text-align: center;
         line-height: 6.8rem;
     }
-}
-
-@media (min-width: 1000px) {
-    
 }

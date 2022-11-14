@@ -1,5 +1,5 @@
-export function factory(headerPath, nav, openClose) {
-    function abrirHeader() {
+export function header(headerPath, nav, openClose) {
+    function openHeader() {
         if (openClose == true) {
             openClose = false;
         } else {
@@ -15,6 +15,6 @@ export function factory(headerPath, nav, openClose) {
     }
 
     return {
-        abrirHeader
+        openHeader
     }
 }

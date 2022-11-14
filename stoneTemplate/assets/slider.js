@@ -1,4 +1,24 @@
-count = 1;
+import {factory} from './header.js'
+
+let buttonHeader = document.querySelector('.header-button')
+let headerPath = document.querySelector('.header-path')
+let nav = document.querySelector('.header-nav')
+let openClose = false;
+
+
+const {abrirHeader} = factory(headerPath, nav, openClose)
+
+buttonHeader.addEventListener('click', abrirHeader)
+
+
+
+
+
+
+
+
+
+let count = 1;
 document.getElementById("radio1").checked = true;
 
 const radios = {

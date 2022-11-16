@@ -3,14 +3,13 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work with us</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <style>
         :root {
             font-size: 62.5%;
@@ -71,7 +70,6 @@
             text-transform: uppercase;
             font-size: 2rem;
         }
-    
         div img {
             height: 4rem;
         }
@@ -115,143 +113,6 @@
             display: inherit;
             z-index: 2;
         }
-
-        main {
-            padding: 4rem 4rem 4rem 4vw;
-            font-family: var(--ff1);
-            color: var(--main-color);
-            font-size: 2rem;
-            background-color: #333;
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-        }
-
-        main h1 {
-            font-weight: normal;
-        }
-
-        .line-beige {
-            margin: 2rem 0 3rem 0;
-            height: .2rem;
-            background-color: var(--main-color);
-            width: 12%;
-        }
-
-        main p {
-            font-family: var(--ff3);
-            color:rgba(189, 189, 189, 0.829);
-        }
-
-        .one, .two {
-            padding: 2rem;
-            padding-left: 4vw;
-            margin-top: 1rem;
-            display: flex;
-            flex-flow: column;
-            font-size: 1.6rem;
-            font-family: var(--ff1);
-        }
-        .one h2, .two h2 {
-            padding-bottom: 2rem;
-            color: rgb(71, 71, 71);
-        }
-        .one p, .two p {
-            font-size: 1.4rem;
-            margin-bottom: 2rem;
-        }
-        .one img, .two img {
-            width: 95%;
-        }
-
-        .tickets {
-            display: flex;
-            justify-content: flex-start;
-            gap: .8rem;
-            height: 3rem;
-        }
-
-        .tickets img, .tickets p {
-            height: 50%;
-            width: fit-content;
-            color: #dbdbdb;
-        }
-        .one button, .two button {
-            width: 13rem;
-            padding: 1rem;
-            font-size: 1.6rem;
-            color: white;
-            font-family: var(--ff1);
-            background-color: var(--main-color);
-            border: 0;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-        }
-        .one button:hover, .two button:hover {
-            color: var(--main-color);
-            background-color: white;
-            border: 2px solid var(--main-color);
-            cursor: pointer;
-        }
-
-        .two h2 {
-            margin-top: 2rem;
-        }
-
-
-        @media (min-width: 775px) {
-            .one, .two {
-                width: 100%;
-                height: 27.4rem;
-                flex-flow: row;
-                gap: 1rem;
-            }
-
-            .one img, .two img {
-                height: 100%;
-                width: 60%;
-            }
-
-            .tickets {
-                display: flex;
-                justify-content: flex-start;
-                gap: .8rem;
-                height: 3rem;
-            }
-
-            .tickets img, .tickets p {
-                height: 50%;
-                width: fit-content;
-                color: #dbdbdb;
-            }
-
-        }
-
-        @media (min-width: 1000px) {
-            .one, .two {
-                width: 95rem;
-                height: 35rem;
-                margin: 0 auto 0rem;
-                gap: 3rem;
-            }
-            .one h2, .two h2 {
-                font-size: 3rem;
-            }
-            .content {
-                width: 33.333333%;
-            }
-            .section-image {
-                width: 66.666667%;
-            }
-        }
-
-        .geral {
-            display: flex;
-            flex-flow: column;
-            gap: 10rem;
-            padding: 10rem 0 8rem 0;
-            background-color: rgb(241, 241, 241);
-        }
         footer {
             background-color: #323232;
             display: flex;
@@ -293,7 +154,139 @@
             font-family: var(--ff1);
             margin-bottom: 2rem;
         }
+        main {
+            padding: 4rem 4rem 4rem 4vw;
+            font-family: var(--ff1);
+            color: var(--main-color);
+            font-size: 2rem;
+            background-color: #333;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
 
+        main h1 {
+            font-weight: normal;
+        }
+
+        .line-beige {
+            margin: 2rem 0 3rem 0;
+            height: .2rem;
+            background-color: var(--main-color);
+            width: 12%;
+        }
+
+        main p {
+            font-family: var(--ff3);
+            color:rgba(189, 189, 189, 0.829);
+        }
+
+        .info {
+            height: 30rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            font-family: var(--ff1);
+            color:#4e4e4e;
+        }
+        .info h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            padding: 3.5rem 0;
+        }
+        .info div {
+            margin: .5rem auto;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .info div img {
+            width: 3.5rem;
+        }
+        .info div:nth-child(3) img {
+            width: 2.5rem;
+        }
+
+        .content {
+            display: flex;
+            gap: 2rem;
+        }
+        .form {
+            background-color: var(--main-color);
+            display: flex;
+            justify-content: center;
+            padding: 4rem 0;
+        }
+        form {
+            width: 95%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        form input, textarea {
+            width: 100%;            
+            padding: 2rem 1rem;
+            font-family: var(--ff1);
+            font-size: 1.8rem;
+            border: 0;
+        }
+        textarea {
+            height: 8rem;
+        }
+        form button {
+            font-family: var(--ff1);
+            background-color: #323232;
+            color: var(--main-color);
+            border: 2px solid #323232;
+            padding: .8rem 1.5rem;
+            font-size: 1.6rem;
+            margin: 2.2rem 0;
+            transition: all 0.3s;
+        }
+        form button:hover {
+            color: #323232;
+            cursor: pointer;
+            background-color: var(--main-color);
+        }
+        form p {
+            font-size: 1.4rem;
+            font-family: var(--ff1);
+        }
+
+        .container {
+                height: 60rem;
+            }
+
+        @media (min-width: 800px) {
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 4rem;
+            }
+            form {
+                width: 85%;
+                align-items: flex-start;
+            }
+            .form {
+                width: 50rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .container {
+                height: 60rem;
+            }
+            .form {
+                width: 70rem;
+            }
+            .info {
+                width: 30rem;
+            }
+            .info p {
+                font-size: 1.6rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -328,53 +321,46 @@
     </header>
 
     <main>
-        <h1>Check out our awesome work</h1>
+        <h1>Let's have a conversation</h1>
         <div class="line-beige"></div>
-        <p>"These guys are top notch fellows." - Some client</p>
+        <p>"Talking to these guys was actually fun! Their work was amazing." - Some client</p>
     </main>
 
-    <section class="geral">
-        <section class="one">
+    <div class="container">
+        <section class="info">
+            <h2>Get in touch</h2>
             <div class="content">
-                <h2>WEBFLOW</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis asperiores sunt voluptatibus eaque sit in, aliquid suscipit, ullam similique dolorum consectetur corporis omnis repudiandae accusantium ex vitae corrupti nulla autem?</p>
-                <div class="tickets">
-                    <img src="../svg/target.svg" alt="">
-                    <p>Web Design</p>
-                    <img src="../svg/target.svg" alt="">
-                    <p>Icon Design</p>
+                <div>
+                    <img src="../svg/mail.svg" alt="mail icon">
+                    <p>contact@stoneagency.com</p>
                 </div>
-                <button>View Project</button>
-            </div>
-            <img class="section-image" src="../images/town.jpg" alt="image test">
-        </section>
-        <section class="two">
-            <img class="section-image" src="../images/city.jpg" alt="image test">
-            <div class="content">
-                <h2>COMET SKATEBOARDS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis asperiores sunt voluptatibus eaque sit in, aliquid suscipit autem?</p>
-                <div class="tickets">
-                    <img src="../svg/target.svg" alt="">
-                    <p>Web Design</p>
-                    <img src="../svg/target.svg" alt="">
-                    <p>Icon Design</p>
+                <div>
+                    <img src="../svg/location.svg" alt="target icon location">
+                    <p>1423 Elk Street</p>
+                    <p>Brooklyn, NY 82328</p>
                 </div>
-                <button>View Project</button>
             </div>
         </section>
-    </section>
+        <section class="form">
+            <form>
+                <input type="text" name="" id="" placeholder="NAME" required>
+                <input type="email" name="" id="" placeholder="EMAIL" required>
+                <input type="email" name="" id="" placeholder="BUDGET" required>
+                <textarea name="" id="" cols="10" rows="10" maxlength="4000" placeholder="PROJECT DESCRIPTION" required></textarea>
+                <button>SEND EMAIL</button>
+                <p>We'll get back to you within 48 hours.</p>
+            </form>
+        </section>
+    </div>
+
+
+
 
     <footer>
         <div><img src="../svg/gray-icon.svg" alt="stone icon gray color"><p class="off">2022 Stone Creative Agency</p></div>
-        <a href="./contact.html"><button class="footer-button">Get in touch with us</button></a>
+        <a href=""><button class="footer-button">Get in touch with us</button></a>
             <p>1423 Elk St, Brooklyn NY, 82328</p>
     </footer>
-
-
-
-
-
-
 
     <script src="./index.js"></script>
 </body>

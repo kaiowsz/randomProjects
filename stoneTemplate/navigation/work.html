@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            font-size: 62.5%;
+            --ff1: 'Roboto Condensed', sans-serif;
+            --ff2: 'Roboto', sans-serif;
+            --ff3: 'Vollkorn', serif;
+            --main-color: #c7aa8b;
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+    
+        header {
+            background-color: #333;
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            border-bottom: 1px solid rgba(107, 107, 107, 0.74);
+        }
+    
+        .logo a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-left: 3vw;
+        }
+        .logo img {
+            height: 2.5rem;
+            margin-left: 1rem;
+        }
+    
+        .header-button {
+            background: transparent;
+            border: 0;
+        }
+        .header-button:hover {
+            cursor: pointer;
+        }
+    
+        .header-img {
+            margin-right: 5vw;
+        }
+    
+        .header-img path {
+            width: 24px;
+            height: 24px;
+        }
+    
+        .logo-title {
+            color: white;
+            font-family: var(--ff1);
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    
+        div img {
+            height: 4rem;
+        }
+    
+        .header-nav {
+            position: absolute;
+            bottom: -18rem;
+            left: 0;
+            font-size: 1.6rem;
+            width: 100%;
+            background-color:#272727;
+            display: flex;
+            flex-flow: column;
+        }
+    
+        .header-nav li {
+            font-family: var(--ff1);
+            text-transform: uppercase;
+            height: 6rem;
+            border: 1px solid rgba(189, 189, 189, 0.055);
+            display: flex;
+            padding-left: 2rem;
+            align-items: center;
+            letter-spacing: .2rem;
+            font-weight: lighter;
+        }
+    
+        .header-nav a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.747);
+        }
+        .header-nav li:hover {
+            background-color: black;
+        }
+    
+        .off {
+            display: none;
+        }
+    
+        .ondisplay {
+            display: inherit;
+            z-index: 2;
+        }
+
+        main {
+            padding: 4rem 4rem 4rem 4vw;
+            font-family: var(--ff1);
+            color: var(--main-color);
+            font-size: 2rem;
+            background-color: #333;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        main h1 {
+            font-weight: normal;
+        }
+
+        .line-beige {
+            margin: 2rem 0 3rem 0;
+            height: .2rem;
+            background-color: var(--main-color);
+            width: 12%;
+        }
+
+        main p {
+            font-family: var(--ff3);
+            color:rgba(189, 189, 189, 0.829);
+        }
+
+        .one, .two {
+            padding: 2rem;
+            padding-left: 4vw;
+            margin-top: 1rem;
+            display: flex;
+            flex-flow: column;
+            font-size: 1.6rem;
+            font-family: var(--ff1);
+        }
+        .one h2, .two h2 {
+            padding-bottom: 2rem;
+            color: rgb(71, 71, 71);
+        }
+        .one p, .two p {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+        .one img, .two img {
+            width: 95%;
+        }
+
+        .tickets {
+            display: flex;
+            justify-content: flex-start;
+            gap: .8rem;
+            height: 3rem;
+        }
+
+        .tickets img, .tickets p {
+            height: 50%;
+            width: fit-content;
+            color: #dbdbdb;
+        }
+        .one button, .two button {
+            width: 13rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            color: white;
+            font-family: var(--ff1);
+            background-color: var(--main-color);
+            border: 0;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .one button:hover, .two button:hover {
+            color: var(--main-color);
+            background-color: white;
+            border: 2px solid var(--main-color);
+            cursor: pointer;
+        }
+
+        .two h2 {
+            margin-top: 2rem;
+        }
+
+
+        @media (min-width: 775px) {
+            .one, .two {
+                width: 100%;
+                height: 27.4rem;
+                flex-flow: row;
+                gap: 1rem;
+            }
+
+            .one img, .two img {
+                height: 100%;
+                width: 60%;
+            }
+
+            .tickets {
+                display: flex;
+                justify-content: flex-start;
+                gap: .8rem;
+                height: 3rem;
+            }
+
+            .tickets img, .tickets p {
+                height: 50%;
+                width: fit-content;
+                color: #dbdbdb;
+            }
+
+        }
+
+        @media (min-width: 1000px) {
+            .one, .two {
+                width: 95rem;
+                height: 35rem;
+                margin: 0 auto 0rem;
+                gap: 3rem;
+            }
+            .one h2, .two h2 {
+                font-size: 3rem;
+            }
+            .content {
+                width: 33.333333%;
+            }
+            .section-image {
+                width: 66.666667%;
+            }
+        }
+
+        .geral {
+            display: flex;
+            flex-flow: column;
+            gap: 10rem;
+            padding: 10rem 0 8rem 0;
+            background-color: rgb(241, 241, 241);
+        }
+        footer {
+            background-color: #323232;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        footer img {
+            padding-top: 2rem;
+            margin: auto;
+        }
+
+        footer a {
+            width: 90%;
+        }
+
+        footer button {
+            font-family: var(--ff1);
+
+            width: 100%;
+            border: 2px solid #c7aa8b;
+            color: #c7aa8b;
+            font-size: 1.6rem;
+            padding: 1rem 0;
+            background-color: transparent;
+            text-transform: uppercase;
+            transition: all .5s;
+        }
+
+        footer button:hover {
+            color: #323232;
+            background-color: #c7aa8b;
+            cursor: pointer;
+        }
+
+        footer p {
+            color:rgba(128, 128, 128, 0.774);
+            font-size: 1.6rem;
+            font-family: var(--ff1);
+            margin-bottom: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="https://uploads-ssl.webflow.com/636ab256faeb12b1eb5e70b6/636ab256faeb1207f75e70cb_stone-webclip.png" alt="Stone logo">
+                <p class="logo-title">Stone</p>
+            </a>
+        </div>
+        <div class="header-img">
+            <button class="header-button">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="24.75px" height="24.75px" viewBox="0 0 24.75 24.75" style="enable-background:new 0 0 24.75 24.75;" xml:space="preserve"
+                    >
+                <g>
+                    <path class="header-path" fill="lightgray" d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2
+                        c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2
+                        c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"/>
+                </g>
+                </svg>
+            </button>
+            <ul class="header-nav off"> 
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Work</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Check out our awesome work</h1>
+        <div class="line-beige"></div>
+        <p>"These guys are top notch fellows." - Some client</p>
+    </main>
+
+    <section class="geral">
+        <section class="one">
+            <div class="content">
+                <h2>WEBFLOW</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis asperiores sunt voluptatibus eaque sit in, aliquid suscipit, ullam similique dolorum consectetur corporis omnis repudiandae accusantium ex vitae corrupti nulla autem?</p>
+                <div class="tickets">
+                    <img src="../svg/target.svg" alt="">
+                    <p>Web Design</p>
+                    <img src="../svg/target.svg" alt="">
+                    <p>Icon Design</p>
+                </div>
+                <button>View Project</button>
+            </div>
+            <img class="section-image" src="../images/town.jpg" alt="image test">
+        </section>
+        <section class="two">
+            <img class="section-image" src="../images/city.jpg" alt="image test">
+            <div class="content">
+                <h2>COMET SKATEBOARDS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis asperiores sunt voluptatibus eaque sit in, aliquid suscipit autem?</p>
+                <div class="tickets">
+                    <img src="../svg/target.svg" alt="">
+                    <p>Web Design</p>
+                    <img src="../svg/target.svg" alt="">
+                    <p>Icon Design</p>
+                </div>
+                <button>View Project</button>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div><img src="../svg/gray-icon.svg" alt="stone icon gray color"><p class="off">2022 Stone Creative Agency</p></div>
+        <a href=""><button class="footer-button">Get in touch with us</button></a>
+            <p>1423 Elk St, Brooklyn NY, 82328</p>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+
+        let headerButton = document.querySelector('.header-button')
+        headerButton.addEventListener('click', toggleNav)
+
+        function toggleNav() {
+            document.querySelector('.header-nav').classList.toggle('off')
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: rgb(24, 23, 23); */
+    background: linear-gradient(#404140, #000000);
+}
+
+main {
+    color: rgb(255, 255, 255);
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    padding: 60px 100px 100px 100px;
+    font-family: 'Righteous', sans-serif; 
+}
+
+.remain {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.clicker { 
+    font-family: 'Open Sans';
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.clicks-start {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
+    margin: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    background: black;
+}
+
+.modal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    opacity: 1;
+    background: linear-gradient(white, gray);
+    padding: 20px;
+    width: 60%;
+    height: 40%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    color: green;
+}
+
+.modal h1 {
+    margin: 20px 0;
+}
+.modal h2 {
+    font-size: 40px;
+    margin: 20px 0 0 0;
+}
+.off {
+    display: none;
+}
+
+.buttons button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.button-stop {
+    border: 0;
+    background-color: red;
+}
+.button-timer {
+    background-color: yellow;
+    border: 0;
+}
+
+.btn-modal {
+    padding: 10px;
+    background-color: rgb(12, 17, 12);
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color:rgb(96, 228, 114);
+    transition: all .2s;
+}
+.btn-modal:hover {
+    cursor: pointer;
+    color: rgb(12, 17, 12);
+    background-color: rgb(96, 228, 114);
+}
+
+.modal img {
+    width: 250px;
+    opacity: 0.9;
+}

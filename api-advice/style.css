@@ -1,0 +1,40 @@
+:root {
+    font-size: 62.5%;
+    font-family: 'Poppins';
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#app h1 {
+    font-size: 2.5rem;
+}
+
+#app p {
+    font-size: 1.4rem;
+}
+
+.take {
+    background-color: rgb(206, 206, 206);
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins';
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.take:hover {
+    background-color:rgb(146, 146, 146);
+
+}

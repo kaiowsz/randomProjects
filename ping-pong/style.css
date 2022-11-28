@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-flow: column;
     margin-top: 100px;
@@ -22,8 +22,8 @@ body {
     position: absolute;
     top: 240px;
     left: 475px;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     background-color: rgb(199, 199, 199);
 }

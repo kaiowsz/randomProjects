@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#page {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+header {
+    padding: 3rem;
+    display: flex;
+    width: 750px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    border: 2px solid rgb(0, 0, 0);
+    padding: .6rem;
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    border-radius:.5rem 0 0 .5rem;
+}
+
+.search button {
+    border: 0;
+    cursor: pointer;
+    padding: 0 1rem;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.search button:hover {
+    background-color: black;
+}
+
+table {
+    width: 750px;
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead th {
+    padding: 1rem;
+    background-color: black;
+    border: 0;
+}
+
+thead th:first-child {
+    border-radius: .5rem 0 0 0;
+}
+
+thead th:last-child {
+    border-radius: 0 .5rem 0 0;
+
+}
+
+tbody tr{
+    background-color: rgb(94, 94, 94);
+}
+
+tbody td {
+    padding: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(77, 75, 75);
+}
+
+.remove {
+    background-color: transparent;
+    border: 0;
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: rgb(189, 0, 0);
+}
+
+.user {
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Anek Devanagari';
+}
+
+.user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    font-weight: 100;
+    flex-flow: column;
+    text-decoration: none;
+    color: white;
+}

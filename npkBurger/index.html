@@ -6,23 +6,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feane Template</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="top flex-center">
-            <p>Feane</p>
-            <div class="menu-top"><img src="images/icons8-menu-arredondado-30.png" alt=""></div>
+        <div class="content-top">
+            <div class="top flex-center">
+                <p>Feane</p>
+                <div class="navigation-top">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">MENU</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">BOOK TABLE</a></li>
+                    </ul>
+                </div>
+                <div class="menu-top"><img src="images/icons8-menu-arredondado-30.png" alt=""></div>
+            </div>
+            <div class="text-header">
+                <h1>Fast Food Restaurant</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo voluptatibus dolor minima architecto dolore sed similique possimus? Alias nesciunt natus enim dolores, amet ut autem in optio delectus error.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="selector"></div>
         </div>
-        <div class="text-header">
-            <h1>Fast Food Restaurant</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur explicabo voluptatibus dolor minima architecto dolore sed similique possimus? Alias nesciunt natus enim dolores, amet ut autem in optio delectus error.</p>
-            <button>Order Now</button>
-        </div>
-        <div class="selector">...</div>
     </header>
 
 
@@ -30,16 +41,22 @@
         <div class="burger-promo pp">
             <div class="img-promo">
                 <img src="./images/o1.jpg" alt="hamburguer promo image">
-                <p>Tasty Thursdays</p>
-                <p><span>20%</span> off</p>
-                <button>Order Now</button>
             </div>
+                <div>
+                    <p>Tasty Thursdays</p>
+                    <p><span>20%</span> off</p>
+                    <button>Order Now</button>
+                </div>
         </div>
         <div class="pizza-promo pp">
-            <div class="img-promo"><img src="./images/o2.jpg" alt="pizza promo image"></div>
-            <p>Pizza Days</p>
-            <p><span>15%</span> off</p>
-            <button>Order Now</button>
+            <div class="img-promo">
+                <img src="./images/o2.jpg" alt="pizza promo image">
+            </div>
+            <div>
+                <p>Pizza Days</p>
+                <p><span>15%</span> off</p>
+                <button>Order Now</button>
+            </div>
         </div>
     </div>
 
@@ -178,31 +195,36 @@
     <button class="view-more">View More</button>
 
     <section class="feane">
-        <h2>We Are Feane</h2>
-        <p>Feane is the best option for your hungry. We have the best burguer, pasta and fries of the region. We also have prompt delivery to satisfy your needs in the smallest time possible. </p>
-        <button class="read-more">Read More</button>
-        <img src="./images/about-img.png" alt="hamburguer image about us">
+        <div class="content-feane">
+            <div class="text-feane">
+                <h2>We Are Feane</h2>
+                <p>Feane is the best option for your hungry. We have the best burguer, pasta and fries of the region. We also have prompt delivery to satisfy your needs in the smallest time possible. </p>
+                <button class="read-more">Read More</button>
+            </div>
+            <img src="./images/about-img.png" alt="hamburguer image about us">
+        </div>
     </section>
 
     <section class="book">
         <h2>Book a table</h2>
-        <form action="" id="book">
-            <input type="text" name="" id="" placeholder="Your Name">
-            <input type="number" name="" id="" placeholder="Phone Number">
-            <input type="email" name="" id="" placeholder="Your Email">
-            <select name="" id="">
-                <option value="" disabled selected>How many persons?</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-            </select>
-            <input type="date" name="" id="" placeholder="01/01/2000">
-            <button class="book-button">BOOK NOW</button>
-        </form>
-
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1512.1190432157425!2d-74.005973!3d40.712775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f1e88758d210007!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sus!4v1670516585915!5m2!1sen!2sus" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="content-book">
+            <form action="" id="book">
+                <input type="text" name="" id="" placeholder="Your Name">
+                <input type="number" name="" id="" placeholder="Phone Number">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <select name="" id="">
+                    <option value="" disabled selected>How many persons?</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+                <input type="date" name="" id="" placeholder="01/01/2000">
+                <button class="book-button">BOOK NOW</button>
+            </form>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1512.1190432157425!2d-74.005973!3d40.712775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f1e88758d210007!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sus!4v1670516585915!5m2!1sen!2sus" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
         <div class="customers">

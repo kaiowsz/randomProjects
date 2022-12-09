@@ -35,7 +35,7 @@ header {
 }
 
 .text-header {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .text-header h1 {
@@ -72,6 +72,7 @@ header {
     margin: auto;
     margin-bottom: 4rem;
     border-radius: 4px;
+    font-family: var(--ff1);
 }
 
 .pp p {
@@ -300,7 +301,18 @@ iframe {
     opacity: 1;
 }
 
-.book {
+.navigation-top ul {
+    display: none;
+    gap: 4rem;
+}
+
+.navigation-top ul li {
+    font-family: var(--ff2);
+    list-style: none;
+    font-size: 1.6rem;
+}
+.navigation-top ul li a {
+    text-decoration: none;
 }
 
 .buttons {
@@ -310,8 +322,14 @@ iframe {
     margin-bottom: 5rem;
 }
 
+.prev-button:hover, .next-button:hover {
+    background-color:#a57713; 
+}
+
 .prev-button, .next-button {
     display: block;
+    cursor: pointer;
+    transition: all .5s;
     background-color: #ffbe33;
     width: 4rem;
     height: 4rem;
@@ -344,4 +362,137 @@ footer p {
 
 .author {
     padding: 5rem 0;
+}
+
+.items {
+    transition: all 2s;
+}
+
+@media (min-width: 500px) {
+    .customers {
+        margin-bottom: 25rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 650px) {
+    .feane img {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    .text-header {
+        width: 50%;
+    }
+
+    .carousel-container {
+        max-width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .customers {
+        margin-bottom: 20rem;
+    }
+
+    .content-feane {
+        margin: auto;
+        gap: 2rem;
+        max-width: 110rem;
+        padding: 3rem;
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: center;
+    }
+
+    .feane img {
+        width: 40rem;
+    }
+
+    .text-feane {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .text-feane h2 {
+        font-size: 5rem;
+    }
+
+    .read-more {
+        width: 20rem;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    .navigation-top ul {
+        display: flex;
+    }
+
+    .content-feane {
+        gap: 3rem;
+    }
+
+    .items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .promos {
+        display: flex;
+        gap: 1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .pp {
+        display: flex;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .content-top {
+        margin: auto;
+        max-width: 60%;
+    }
+
+    .top {
+        margin-bottom: 15rem;
+    }
+
+    .items {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .content-book {
+        display: flex;
+        margin: auto;
+        gap: 2rem;
+    }
+
+    #book {
+        width: 60%;
+    }
+
+    .map {
+        width: 80%;
+    }
 }
